@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000; /* Black background */
+  color: #00ff00; /* Matrix green text */
+  font-family: "Courier New", Courier, monospace; /* Monospace font for Matrix feel */
+}
+
+.board {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background-color: #000; /* Black background */
+  border: 2px solid #00ff00; /* Matrix green border */
+}
+
+.paddle {
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  background-color: #00ff00; /* Matrix green paddles */
+}
+
+.paddle-left {
+  left: 0;
+}
+
+.paddle-right {
+  right: 0;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #00ff00; /* Matrix green ball */
+  border-radius: 50%;
+}
+
+.score {
+  position: absolute;
+  font-size: 24px;
+  color: #00ff00; /* Matrix green score */
+}
+
+.left-score {
+  left: 20px;
+  top: 20px;
+}
+
+.right-score {
+  right: 20px;
+  top: 20px;
+}
+
+.character-display {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #00ff00; /* Matrix green characters */
+}
+
+.win-screen,
+.lose-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: #00ff00; /* Matrix green text */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.try-again {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #00ff00; /* Matrix green button */
+  color: #000; /* Black text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.try-again:hover {
+  background-color: #00cc00; /* Slightly darker green on hover */
+}
